@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .RM .RMM {
+        color: aqua;
+      }
+      .ajab {
+        color: brown;
+      }
+      p {
+        color: red;
+      }
+      .RM.RMM {
+        color: blue;
+      }
+      .RM.RMM p {
+        color: pink;
+      }
+      p span.RM {
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <p>Lorem <span class="RM">ipsum dolor</span> sit amet.</p>
+    </header>
+    <aside></aside>
+    <main>
+      <div class="RM">
+        Lorem
+        <p class="RMM">ipsum</p>
+        dolor sit amet consectetur adipisicing elit. Maiores, excepturi.
+      </div>
+      <p class="ajab">something</p>
+      <p>Lorem ipsum dolor sit.</p>
+      <div class="RM RMM">Lorem ipsum dolor sit.</div>
+      <div class="RM RMM">
+        Lorem ipsum dolor sit,
+        <p>amet consectetur</p>
+        adipisicing elit. Enim, reiciendis.
+      </div>
+    </main>
+    <footer></footer>
+    <article></article>
+  </body>
+</html>
