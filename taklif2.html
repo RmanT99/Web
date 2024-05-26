@@ -16,31 +16,133 @@
         font-family: "Times New Roman", Times, serif;
       }
       .alert {
-        position: absolute;
+        position: relative;
         border: 3px solid black;
         background-color: yellow;
         width: 50%;
+        margin-bottom: 50px;
+      }
+      .alert-info {
+        position: relative;
+        font-size: 30px;
+        margin: 3px;
       }
       .alert-text {
         position: relative;
         border: 1px solid black;
         text-align: center;
-        margin-bottom: 5px;
+        left: 70px;
+        bottom: 8px;
+      }
+      .alert-close {
+        position: absolute;
+        font-size: 30px;
+        margin: 3px;
+        right: 10px;
+        cursor: pointer;
+      }
+      .success {
+        position: relative;
+        border: 3px solid black;
+        background-color: greenyellow;
+        width: 50%;
+        margin-bottom: 50px;
+      }
+      .success-check {
+        position: relative;
+        font-size: 30px;
+        margin: 3px;
+      }
+      .success-text {
+        position: relative;
+        border: 1px solid black;
+        text-align: center;
+        left: 70px;
+        bottom: 8px;
+      }
+      .success-close {
+        position: absolute;
+        font-size: 30px;
+        margin: 3px;
+        right: 10px;
+        cursor: pointer;
+      }
+      .fav {
+        position: relative;
+        border: 3px solid black;
+        background-color: red;
+        width: 50%;
+        margin-bottom: 50px;
+      }
+      .fav-fav {
+        position: relative;
+        font-size: 30px;
+        margin: 3px;
+      }
+      .fav-text {
+        position: relative;
+        border: 1px solid black;
+        text-align: center;
+        left: 15px;
+        bottom: 8px;
+      }
+      .fav-close {
+        position: absolute;
+        font-size: 30px;
+        margin: 3px;
+        right: 10px;
+        cursor: pointer;
+      }
+      .refresh {
+        position: relative;
+        border: 3px solid black;
+        background-color: bisque;
+        width: 50%;
+        margin-bottom: 50px;
+      }
+      .refresh-refresh {
+        position: relative;
+        font-size: 30px;
+        margin: 3px;
+      }
+      .refresh-text {
+        position: relative;
+        border: 1px solid black;
+        text-align: center;
+        left: 60px;
+        bottom: 8px;
+      }
+      .refresh-close {
+        position: absolute;
+        font-size: 30px;
+        margin: 3px;
+        right: 10px;
+        cursor: pointer;
       }
     </style>
   </head>
   <body>
     <div class="alert">
-      <span class="material-symbols-outlined" style="padding: 3px; margin: 3px">
-        info
-      </span>
+      <span class="material-symbols-outlined alert-info"> info </span>
       <span class="alert-text">Access with caution!</span>
-      <span
-        class="material-symbols-outlined"
-        style="position: relative; right: 40px; padding: 3px; margin: 3px"
-      >
-        close
+      <span class="material-symbols-outlined alert-close"> close </span>
+    </div>
+    <div class="success">
+      <span class="material-symbols-outlined success-check">
+        check_circle
       </span>
+      <span class="success-text">Action was successful!</span>
+      <span class="material-symbols-outlined success-close"> close </span>
+    </div>
+    <div class="fav">
+      <span class="material-symbols-outlined fav-fav"> favorite </span>
+      <span class="fav-text">Item has been sent too your favorite list!</span>
+      <span class="material-symbols-outlined fav-close"> close </span>
+    </div>
+    <div class="refresh">
+      <span class="material-symbols-outlined refresh-refresh"> refresh </span>
+      <span class="refresh-text">Please refresh this website!</span>
+      <span class="material-symbols-outlined refresh-close"> close </span>
     </div>
   </body>
 </html>
