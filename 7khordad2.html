@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sidebar</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.0/font/bootstrap-icons.min.css"
+    />
+    <style>
+      html {
+        direction: rtl;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .sidebar {
+        position: fixed;
+        height: 100%;
+        width: 350px;
+        border: 5px solid;
+      }
+      .sidebar__header {
+        border: 2px solid;
+        height: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .sidebar__img {
+        display: block;
+        width: 100px;
+        cursor: pointer;
+      }
+      .sidebar__close {
+        border: 1px solid;
+        height: 100px;
+        font-size: 40px;
+        cursor: pointer;
+        padding: 30px;
+      }
+      .sidebar__menu {
+        border: 2px solid;
+        height: calc(100% - 150px);
+      }
+      .sidebar__list {
+        border: 1px solid;
+        list-style: none;
+        background-color: black;
+        height: 100%;
+        padding: 30px;
+      }
+      .sidebar__list-item {
+        margin-bottom: 30px;
+      }
+      .sidebar__list-link {
+        color: aqua;
+        text-decoration: none;
+        font-size: 20px;
+        transition: 0.5s;
+      }
+      .sidebar__list-link:hover {
+        color: white;
+      }
+      .sidebar__footer {
+        border: 2px solid;
+        height: 50px;
+      }
+      .sidebar__footer-link {
+        justify-content: start;
+        padding: 5px;
+      }
+      .sidebar__instagram {
+        color: orange;
+        font-size: 30px;
+      }
+      .sidebar__telegram {
+        color: orange;
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="sidebar__header">
+        <img
+          src="Html Css Course/assets/images/Basketball.png"
+          alt=""
+          class="sidebar__img"
+        />
+        <span class="material-symbols-outlined sidebar__close"> close </span>
+      </div>
+      <div class="sidebar__menu">
+        <ul class="sidebar__list">
+          <li class="sidebar__list-item">
+            <a class="sidebar__list-link" href="#">home</a>
+          </li>
+          <li class="sidebar__list-item">
+            <a class="sidebar__list-link" href="#">shoe</a>
+          </li>
+          <li class="sidebar__list-item">
+            <a class="sidebar__list-link" href="#">jersey</a>
+          </li>
+          <li class="sidebar__list-item">
+            <a class="sidebar__list-link" href="#">shorts</a>
+          </li>
+          <li class="sidebar__list-item">
+            <a class="sidebar__list-link" href="#">about us</a>
+          </li>
+        </ul>
+      </div>
+      <div class="sidebar__footer">
+        <a href="#" class="sidebar__footer-link"
+          ><i class="bi bi-instagram sidebar__instagram"></i
+        ></a>
+        <a href="#" class="sidebar__footer-link"
+          ><i class="bi bi-telegram sidebar__telegram"></i
+        ></a>
+      </div>
+    </div>
+  </body>
+</html>
+<!-- site: parsianclean -->
+<!-- use calc for menu -->
