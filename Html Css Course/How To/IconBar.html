@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Icon Bar</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .nav {
+      width: 90px;
+      background-color: #555;
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+    .nav__button {
+      display: block;
+      text-align: center;
+      padding: 10px 50px;
+      color: white;
+      font-size: 36px;
+    }
+    .nav__button:hover {
+      background-color: black;
+    }
+  </style>
+  <body>
+    <div class="nav">
+      <a href="#" class="nav__button"><i class="fa fa-home"></i></a>
+      <a href="#" class="nav__button"><i class="fa fa-search"></i></a>
+      <a href="#" class="nav__button"><i class="fa fa-envelope"></i></a>
+      <a href="#" class="nav__button"><i class="fa fa-globe"></i></a>
+      <a href="#" class="nav__button"><i class="fa fa-trash"></i></a>
+    </div>
+  </body>
+</html>

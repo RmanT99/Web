@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alert Button Overlay</title>
+    <style>
+      /* Basic styling for the button container */
+      .button-container {
+        position: relative;
+        display: inline-block;
+        margin: 20px;
+      }
+
+      /* Styling for the button */
+      .alert-button {
+        padding: 10px 20px;
+        font-size: 16px;
+        color: white;
+        background-color: #007bff; /* Bootstrap primary blue color */
+        border: none;
+        cursor: pointer;
+        position: relative;
+        z-index: 1;
+      }
+
+      .alert-button:hover {
+        background-color: #0056b3; /* Darker blue on hover */
+      }
+
+      /* Styling for the overlay */
+      .button-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(
+          0,
+          0,
+          0,
+          0.75
+        ); /* Overlay background color and transparency */
+        color: white;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 0;
+      }
+
+      /* Show the overlay on button hover */
+      .button-container:hover .button-overlay {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="button-container">
+      <button class="alert-button">Click Me</button>
+      <div class="button-overlay">
+        <p>This is an alert message!</p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accordion</title>
+    <style>
+      .accordion {
+        width: 100%;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        overflow: hidden;
+        margin-bottom: 10px;
+      }
+
+      .accordion input[type="checkbox"] {
+        display: none;
+      }
+
+      .accordion label {
+        display: block;
+        background-color: #eee;
+        color: #444;
+        cursor: pointer;
+        padding: 18px;
+        font-size: 15px;
+        border-bottom: 1px solid #ddd;
+        transition: background-color 0.4s;
+      }
+
+      .accordion label:hover {
+        background-color: #ccc;
+      }
+
+      .accordion input[type="checkbox"]:checked ~ .panel {
+        display: block;
+      }
+
+      .panel {
+        display: none;
+        padding: 0 18px;
+        background-color: white;
+        overflow: hidden;
+      }
+
+      .panel p {
+        margin: 0;
+        padding: 18px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="accordion">
+      <input type="checkbox" id="section1" name="accordion" />
+      <label for="section1">Section 1</label>
+      <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </div>
+
+    <div class="accordion">
+      <input type="checkbox" id="section2" name="accordion" />
+      <label for="section2">Section 2</label>
+      <div class="panel">
+        <p>
+          Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
+        </p>
+      </div>
+    </div>
+
+    <div class="accordion">
+      <input type="checkbox" id="section3" name="accordion" />
+      <label for="section3">Section 3</label>
+      <div class="panel">
+        <p>Phasellus gravida semper nisi. Nullam vel sem.</p>
+      </div>
+    </div>
+  </body>
+</html>
